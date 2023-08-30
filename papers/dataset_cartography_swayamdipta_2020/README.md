@@ -7,7 +7,7 @@
 
 ## Results
 
-Table 2:
+### Table 2
 
 ![table_2_dataset=winog_val_(id).png](table_2_dataset%3Dwinog_val_%28id%29.png)
 
