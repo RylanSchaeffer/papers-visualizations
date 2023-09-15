@@ -3,7 +3,7 @@ import os
 import seaborn as sns
 
 # Globally set font size
-# plt.rcParams["font.size"] = 12
+plt.rcParams["font.size"] = 12
 sns.set(font_scale=0.8)
 sns.set_style("whitegrid")
 
@@ -13,7 +13,7 @@ def save_plot_with_multiple_extensions(plot_dir: str, plot_title: str):
     plt.gcf().tight_layout()
 
     extensions = [
-        # "pdf",
+        "pdf",
         "png",
     ]
     for extension in extensions:
