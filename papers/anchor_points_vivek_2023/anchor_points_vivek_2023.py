@@ -69,13 +69,14 @@ joint_df.rename(columns={"index": "Dataset"}, inplace=True)
 
 
 plt.close()
-sns.scatterplot(
+g = sns.scatterplot(
     data=joint_df,
     x="Matrix Rank",
     y="Absolute Error",
     hue="Model",
     style="Dataset",
 )
+sns.move_legend(g, "upper left", bbox_to_anchor=(1, 1))
 plt.yscale("log")
 save_plot_with_multiple_extensions(
     plot_dir=paper_dir,
